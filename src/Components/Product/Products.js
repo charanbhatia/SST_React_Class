@@ -16,7 +16,6 @@ function Products(){
     },[]);
     return(
         <div>
-            I am products.
             {
                 products.map(function(item){
                     return (

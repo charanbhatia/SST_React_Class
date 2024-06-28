@@ -1,6 +1,6 @@
 import "./ProductCard.css";
-import AddToCart from "../AddToCart/AddToCart.js";
-import Effect from "../Effect/Effect.jsx";
+import ReduxAddToCart from "../ReduxAddToCart/ReduxAddToCart.js";
+
 import { useRef} from "react";
 
 function ProductCard({ product}) {
@@ -22,10 +22,9 @@ function ProductCard({ product}) {
                 <p ref={pRef} className="show">
                     {product.price.value}
                 </p>
-                <AddToCart
+                <ReduxAddToCart
                     product={product}
                 />
-                <Effect />
             </div>
         </div>
     );
